@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="condition">
+            <img src="sunny.svg" alt="">
+        </div>
+
+        <div class="sea"></div>
+
+        <div class="wave-container">
+            <div class="wave one"></div>
+            <div class="wave two"></div>
+            <div class="wave three"></div>
+        </div>
+
+        <div class="info">
+            <div class="box1">
+                <h2><img src="streetview.svg" alt=""> {%city%}, {%country%}</h2>
+                <p class="date">WED | OCT 23 | 10:44 AM</p>
+            </div>
+            <div class="box2">
+                <h1 class="temp">{%temp%} &deg;C</h1>
+                <h3 class="min-max">Min {%minTemp%} &deg;C | Min {%maxTemp%} &deg;C</h3>
+            </div>
+            <div class="input">
+                <form id="weatherForm" action="/" method="GET">
+                    <label for="city">Enter city name:</label>
+                    <input type="text" id="cityInput" name="city" placeholder="Enter city">
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
